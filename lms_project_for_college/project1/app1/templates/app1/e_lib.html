@@ -1,0 +1,76 @@
+{% extends 'app1/base.html'%}
+
+
+{% block main%}
+{% load static %}
+<div id="container">
+
+    {% include 'app1/header.html'%}
+    {% include 'app1/header2.html'%}
+    <div id="ddd">
+    </div>
+    <div id="mar">
+        <marquee direction="alternate",speed="1"> khauf chale hai.....</marquee>
+    </div>
+    <div id="wrap">
+         {% include 'app1/side.html'%}
+
+
+        <div id="content">
+            <div id="lib">
+                <b>LIBRARY   MANAGEMENT   BCA   DEPARTMENT<br> PITHORAGARH   UTTARAKHAND</br></b>
+            </div>
+
+            <div id="imgbook">
+                    <img src="{% static 'img/book1.jpg'%}" height="380" width="100%" alt="picture not show"/>
+                </div>
+<div id="mainlb">
+                        <marquee direction="right"behavior="alternate" style="border:solid"> <h1 > FREE PDF/E-BOOK FOR DIFFERENT COURSES </h1></marquee>
+                        <div id="d1"> <b><center>C </center></b></div>
+                        <div id="d2"> <b><center>C++</center></b></div>
+                        <div id="d3"> <b><center>Java</center></b></div>
+                        <div id="d4"> <b><center>Javascript</center></b></div>
+                        <div id="d5"><b> <center>Python</center></b></div>
+                        <div id="d6"><b><center> AI</center></b></div>
+                        <div id="d7"> <b><center>Discreate Math </center></b></div>
+                        <div id="d8"><b> <center>Digital Electronics</center></b></div>
+                        <div id="d9"><b><center> Software Engineering</center></b></div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+            <h2>L.S.M. GPG College History.</h2>
+            <p class="intro3">
+                With the vision to strengthen the root of higher education in remote area Pithoragarh, Uttar Pradesh
+                Government established this college in the year 1963. Initially the College was started with seven
+                subjects of undergraduate courses in arts stream. In a very short span of time, responsive to the needs
+                and demands of the local people, studies in science and commerce streams upto undergraduate level were
+                also started. This was soon followed by the setting up of education faculty and upgradation of the
+                existing streams to the postgraduate level in 1971. In the initial decade the College was affiliated to
+                Agra University but from 1973 being affiliated with Kumaon University the College is constantly
+                progressing to the new achievements. Beginning with the modest strength of 32 students the college grew
+                into having largest student input in the district today. The exposure in sports and academics makes this
+                college one of the biggest government colleges of Kumaun region.
+            </p>
+
+
+
+
+
+
+</div>
+    </div>
+</div>
+
+
+
+
+{% include 'app1/footer.html' %}
+{% endblock %}

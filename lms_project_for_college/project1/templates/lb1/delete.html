@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book List</title>
+</head>
+<body>
+	<h1>Here are the List of Books</h1>
+	<h2>Click on the Links  For Delete</h2>
+	<ol>
+		{% for book in booklist %}
+			<li>
+				<h3><a href="{{book.pk}}">{{book.name}}</a></h3>
+			</li>
+		{% endfor %}
+	</ol>
+</body>
+</html>

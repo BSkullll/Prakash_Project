@@ -1,0 +1,63 @@
+{% extends 'lb1/base.html' %}
+
+
+{% block main %}
+{% load static %}
+
+<div class="container">
+  <h2>show all student</h2>
+
+  <table class="table">
+
+    <thead>
+      <tr class="bg-danger">
+        <th>student name</th>
+        <th>semester </th>
+        <th>std id</th>
+        <th>father Name</th>
+        <th>Mobile_no</th>
+        <th>Aadhar_no</th>
+        <th>Address</th>
+        <th>Pin code</th>
+        <th>Books</th>
+      </tr>
+    </thead>
+    <tbody>
+{% for Addstudent in showstudents %}
+      <tr class="bg-active">
+
+
+        <td>{{ Addstudent.student_name }}</td>
+        <td>{{ Addstudent.Student_semester}}</td>
+        <td>{{ Addstudent.Student_id }}</td>
+        <td>{{ Addstudent.Father_name }}</td>
+        <td>{{ Addstudent.Mobile_no }}</td>
+        <td>{{ Addstudent.Aadhar_no }}</td>
+        <td>{{ Addstudent.Address }}</td>
+        <td>{{ Addstudent.Pin_code }}</td>
+        <td>{{ Addstudent.Books }}</td>
+        {% endfor %}
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+
+
+

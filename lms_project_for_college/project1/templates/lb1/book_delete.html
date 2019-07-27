@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book Delete</title>
+</head>
+<body>
+	<h3>Do you want to Delete book ?</h3>
+	<form method="POST">
+		{% csrf_token %}
+		<input type="submit" name="" value="Delete"> |
+		<a href="{% url 'home1' %}">Cancel</a>
+	</form>
+</body>
+</html>

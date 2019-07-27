@@ -1,0 +1,56 @@
+{% extends 'lb1/base.html' %}
+
+{% block main %}
+{% load static %}
+
+ <div class="col" id="main">
+
+  <div class="signup-form">
+    <form method="POST">
+        {% csrf_token %}
+
+		<center><h2><b>Add Student details</b></h2></center>
+		<p></p>
+		<hr>
+        <div class="form-group">
+			<label><b>Student ID</b></label>
+        	<input type="text" class="form-control" name="student_id" required="required">
+        </div>
+        <div class="form-group">
+			<label><b>Student Name</b></label>
+        	<input type="text" class="form-control" name="student_name" required="required">
+        </div>
+		<div class="form-group">
+			<label><b>Fathe Name<b></label>
+            <input type="text" class="form-control" name="father_name" required="required">
+        </div>
+		<div class="form-group">
+			<label><b>Mobile No</b></label>
+            <input type="text" class="form-control" name="mobile_no" required="required">
+        </div>
+        <div class="form-group">
+			<label><b>Aadhar No</b></label>
+            <input type="text" class="form-control" name="aadhar_no" required="required">
+        </div>
+
+        <div class="form-group">
+			<label><b>Address</b></label>
+            <input type="text" class="form-control" name="address" required="required">
+        </div>
+
+        <div class="form-group">
+			<label><b>books</b></label>
+            <input type="text" class="form-control" name="books" required="required">
+        </div>
+
+
+        <div class="form-group">
+            <center><button type="submit" class="btn btn-success btn-lg"><b>ADD</b></button></center>
+        </div>
+    </form>
+  </div>
+ </div>
+
+{% endblock %}
+
+

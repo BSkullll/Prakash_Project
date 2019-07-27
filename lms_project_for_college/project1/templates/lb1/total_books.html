@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Total Books</title>
+</head>
+<body>
+	<h1>Total Books</h1>
+	<h3>Total Books are {{count}}</h3>
+	<h2>Here are the List of Total Books</h2>
+	<ol>
+		{% for book in books %}
+			<li>Books Name : {{book.name}}</li>
+		{% endfor %}
+	</ol>
+
+	
+</body>
+</html>

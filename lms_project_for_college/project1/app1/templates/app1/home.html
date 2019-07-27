@@ -1,0 +1,79 @@
+{% extends 'app1/base.html'%}
+
+
+{% block main%}
+{% load static %}
+<div id="container">
+
+    {% include 'app1/header.html'%}
+    {% include 'app1/header2.html'%}
+    <div id="ddd">
+    </div>
+    <div id="wrap">
+         {% include 'app1/side.html'%}
+
+
+        <div id="content">
+
+<!--            <h1 id="lib2"><center>LAXMAN SINGH MAHAR GOVT. PG PITHORAGARH UTTARAKHAND </center></h1>-->
+            <img src="{% static 'img/col.jpg'%}" height="400" width="97%" alt="Thumbnail example"/>
+            <p class="intro">Established in 1963, Laxman Singh Mehar Govt. Post graduate College Pithoragarh
+                (Uttarakhand) is an affiliated college of Kumaon University Nainital. It is the college which is being
+                developed as model college by the Government of Uttarakhand, and is among the 70 Government Colleges in
+                Uttarkhand. It is the only college of Kumaon region which has been previously accredited as B++ by
+                NAAC.</p>
+            <p class="intro2">It is a long established fact that a reader will be distracted by the readable content of
+                a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                distribution of letters, as opposed to using 'Content here, content here', making it look like readable
+                English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
+                model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
+                versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and
+                the like).</p>
+
+            <h2>L.S.M. GPG College History.</h2>
+            <p class="intro3">
+                With the vision to strengthen the root of higher education in remote area Pithoragarh, Uttar Pradesh
+                Government established this college in the year 1963. Initially the College was started with seven
+                subjects of undergraduate courses in arts stream. In a very short span of time, responsive to the needs
+                and demands of the local people, studies in science and commerce streams upto undergraduate level were
+                also started. This was soon followed by the setting up of education faculty and upgradation of the
+                existing streams to the postgraduate level in 1971. In the initial decade the College was affiliated to
+                Agra University but from 1973 being affiliated with Kumaon University the College is constantly
+                progressing to the new achievements. Beginning with the modest strength of 32 students the college grew
+                into having largest student input in the district today. The exposure in sports and academics makes this
+                college one of the biggest government colleges of Kumaun region.
+            </p>
+
+            <h1>LOCATION</h1>
+
+            <div class="map" style="width:50%;float:left;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3469.717432050978!2d80.19644341496723!3d29.582823847186347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a125c08d0352e3%3A0xb97240340b7c9042!2sL+S+M+Government+P+G+College!5e0!3m2!1sen!2sin!4v1559798927806!5m2!1sen!2sin"
+                        width="100%"  frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+            <div class="right" style="width:50%;float:left;">
+            <h2>Land and Building.:</h2>
+            <p class="p12">
+                The area of land in possession is 10736.315 sq. mtrs. while the built up area is 1500 sq. mtrs. There
+                are 9 number of constructed buildings , 35 rooms, 1 multipurpose Hall, 12 Labs and 1 play ground in the
+                College. The College is equipped with 1 Library enriched with more than one lakh of text and reference
+                books. A collection of reputed journals is also housed in a seperate Hall (UGC Reading Hall) for the
+                benefits of the students. Digitization of Library is proposed and we are trying our best to implement a
+                digital Library.
+            </p>
+
+            </div>
+            <h1>LOCATION</h1>
+            <p class="q12">Location.
+                The College is located in the district headquarter of Pithoragarh and is situated at 151 km.and 220 km
+                road distance from Tanakpur and Kathgodam rail heads respectively.
+            </p>
+
+
+</div>
+    </div>
+</div>
+
+
+{% include 'app1/footer.html' %}
+{% endblock %}

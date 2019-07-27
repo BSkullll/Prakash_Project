@@ -1,0 +1,29 @@
+{% extends 'app1/base.html'%}
+
+
+{% block main%}
+{% load static %}
+<div id="container">
+
+    {% include 'app1/header.html'%}
+    {% include 'app1/header2.html'%}
+    <div id="ddd">
+    </div>
+    <div id="wrap">
+         {% include 'app1/side.html'%}
+
+
+        <div id="content">
+
+<!--            <h1 id="lib2"><center>LAXMAN SINGH MAHAR GOVT. PG PITHORAGARH UTTARAKHAND </center></h1>-->
+            <img src="{% static 'img/col.jpg'%}" height="400" width="97%" alt="Thumbnail example"/>
+
+
+</div>
+    </div>
+</div>
+
+
+{% include 'app1/footer.html'%}
+
+            {% endblock %}

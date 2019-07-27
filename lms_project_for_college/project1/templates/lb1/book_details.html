@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book Details</title>
+</head>
+<body>
+	<h1>Here are the Details of Book</h1>
+	<h2>Book Name : {{book_details.name}}</h2>
+	<h3>Author Name : {{book_details.author_name}}</h3>
+	<h3>Publication : {{book_detail.publication}}</h3>
+
+
+	<h2>Name of Students that issued this book</h2>
+	<ol>
+		{% for book in book_details.books.all %}
+			<li>
+				<h4>{{book.name}}</h4>
+			</li>
+		{% endfor %}
+	</ol>
+
+</body>
+</html>
